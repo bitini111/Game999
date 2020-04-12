@@ -1,16 +1,20 @@
 include "config.path"
- 
--- 启动的第一服务及参数，默认为snlua bootstrap。
--- 表示启动名为bootstrap的Lua服务，即service/bootstrap.lua。
-bootstrap = "snlua bootstrap"
- 
--- main script
-start = "main"
- 
+  
 -- logger
 logger = nil
 logservice = "logger"
 logpath = "."
  
+thread = 2
+harbor = 1
+
+address = "127.0.0.1:2526"
+master = "127.0.0.1:2013"
+-- 启动的第一服务及参数，默认为snlua bootstrap。
+start = "main"	-- main script
+-- 表示启动名为bootstrap的Lua服务，即service/bootstrap.lua。
+bootstrap = "snlua bootstrap"	-- The service for bootstrap
+standalone = "0.0.0.0:2013"
+
 -- daemon
 -- daemon = "skynet.pid"

@@ -9,7 +9,7 @@
             "type": "lua",
             "request": "launch",
             "program": "${workspaceFolder}",
-            "config": "./conf/config_vsc"
+            "config": "./conf/config"
         }
     ]
 }

@@ -864,11 +864,4 @@ debug.init(skynet, {
 	resume = coroutine_resume,
 })
 
--- vscode debug
-local vscdebug = require "skynet.vscdebug"
-vscdebug.init(skynet, {
-	suspend = suspend,
-	resume = coroutine_resume,
-})
-
 return skynet
