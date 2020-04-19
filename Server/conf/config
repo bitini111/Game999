@@ -1,9 +1,9 @@
 include "config.path"
   
 -- logger
-logger = nil
+logger = systemlog
 logservice = "logger"
-logpath = "."
+logpath = "./log"
  
 thread = 2
 harbor = 1
@@ -17,4 +17,10 @@ bootstrap = "snlua bootstrap"	-- The service for bootstrap
 standalone = "0.0.0.0:2013"
 
 -- daemon
+---日志系统配置
+error = true
+info = true
+warning = true 
+obj = false
+protomsg = true
 -- daemon = "skynet.pid"

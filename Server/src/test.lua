@@ -24,10 +24,10 @@ skynet.start(function()
     -- end)
     -- skynet.register("test1")
 
-    skynet.dispatch("lua", function(session, address, ...)
-        --dosomething(session, address, ...)
-    end)
-    skynet.register(".test")
+    -- skynet.dispatch("lua", function(session, address, ...)
+    --     --dosomething(session, address, ...)
+    -- end)
+    -- skynet.register(".test")
 
 
 end)

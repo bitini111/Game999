@@ -1,0 +1,8 @@
+syntax = "proto3";
+package netmsg;
+message NetMsg {
+	int64 id = 1;
+	bytes payload = 2;
+    int32 code = 3;
+}
+
